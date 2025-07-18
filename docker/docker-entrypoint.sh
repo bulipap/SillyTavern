@@ -9,4 +9,5 @@ fi
 npm run postinstall
 
 # Start the server
+mkdir -p data && \
 exec node server.js --listen true --port ${PORT:-8000}
